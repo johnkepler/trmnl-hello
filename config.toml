@@ -1,0 +1,6 @@
+strategy = "polling"
+url = "https://trmnl-dsn.netlify.app/dsn.json"
+
+[polling_headers]
+authorization = "bearer 123"
+content-type = "application/json"
