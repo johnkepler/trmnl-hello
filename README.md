@@ -7,7 +7,7 @@ This is a boilerplate repository for the [trmnl_preview](https://github.com/schr
 If you have Docker installed:
 
 ```sh
-bin/serve
+./bin/serve
 ```
 
 Otherwise:
