@@ -2,93 +2,93 @@
     "name": "Family Calendar",
     "days": [
       {
-        "date": "20250217",
-        "dow": "WEDNESDAY",
+        "date": "2025-02-17",
+        "dow": "Wednesday",
         "temperature": "55°/51°",
         "weather": "Rain",
         "events": [
           {
-            "Etag": "m799xug3",
-            "Id": "42AEC16F-AE51-416D-A3B1-7F79B15865AD",
-            "Type": "Day",
-            "Status": "Confirmed",
-            "Summary": "Presidents Week",
-            "Description": "",
-            "Location": "",
-            "Start": {
-              "Date": "20250217",
-              "Datetime": "20250217T000000",
-              "Timezone": "America/Los_Angeles"
+            "etag": "m799xug3",
+            "id": "42AEC16F-AE51-416D-A3B1-7F79B15865AD",
+            "type": "Day",
+            "status": "Confirmed",
+            "summary": "Presidents Week",
+            "description": "",
+            "location": "",
+            "start": {
+              "date": "20250217T000000",
+              "datetime": "20250217T000000",
+              "timezone": "America/Los_Angeles"
             },
-            "End": {
-              "Date": "20250218",
-              "Datetime": "20250218T000000",
-              "Timezone": "America/Los_Angeles"
+            "end": {
+              "date": "20250218T000000",
+              "datetime": "20250218T000000",
+              "timezone": "America/Los_Angeles"
             }
           },
           {
-            "Etag": "m4ybyllc",
-            "Id": "0D8F362C-7378-446C-89C7-66E736FF26DB",
-            "Type": "Timed",
-            "Status": "Confirmed",
-            "Summary": "Tyr lottery opens for Alice in wonderland",
-            "Description": "Event reminder",
-            "Location": "",
-            "Start": {
-              "Date": "20250217",
-              "Datetime": "20250217T100000",
-              "Timezone": "America/Los_Angeles"
+            "etag": "m4ybyllc",
+            "id": "0D8F362C-7378-446C-89C7-66E736FF26DB",
+            "type": "Timed",
+            "status": "Confirmed",
+            "summary": "Tyr lottery opens for Alice in wonderland",
+            "description": "Event reminder",
+            "location": "",
+            "start": {
+              "date": "20250217T000000",
+              "datetime": "20250217T100000",
+              "timezone": "America/Los_Angeles"
             },
-            "End": {
-              "Date": "20250217",
-              "Datetime": "20250217T103000",
-              "Timezone": "America/Los_Angeles"
+            "end": {
+              "date": "20250217T000000",
+              "datetime": "20250217T103000",
+              "timezone": "America/Los_Angeles"
             }
           },
           {
-            "Etag": "m6yiygfb",
-            "Id": "F2319A19-F72A-467F-B811-33CEFC74C09B",
-            "Type": "Timed",
-            "Status": "Confirmed",
-            "Summary": "Fencing (Evan)",
-            "Description": "",
-            "Location": "",
-            "Start": {
-              "Date": "20250217",
-              "Datetime": "20250217T180000",
-              "Timezone": "America/Los_Angeles"
+            "etag": "m6yiygfb",
+            "id": "F2319A19-F72A-467F-B811-33CEFC74C09B",
+            "type": "Timed",
+            "status": "Confirmed",
+            "summary": "Fencing (Evan)",
+            "description": "",
+            "location": "",
+            "start": {
+              "date": "20250217T000000",
+              "datetime": "20250217T180000",
+              "timezone": "America/Los_Angeles"
             },
-            "End": {
-              "Date": "20250217",
-              "Datetime": "20250217T193000",
-              "Timezone": "America/Los_Angeles"
+            "end": {
+              "date": "20250217T000000",
+              "datetime": "20250217T193000",
+              "timezone": "America/Los_Angeles"
             }
           }
         ]
       },
       {
-        "date": "20250218",
-        "dow": "THURSDAY",
+        "date": "2025-02-18",
+        "dow": "Thursday",
         "temperature": "56°/53°",
-        "weather": "",
+        "weather": "Overcast",
         "events": [
           {
-            "Etag": "m799xug4",
-            "Id": "42AEC16F-AE51-416D-A3B1-7F79B15865AE",
-            "Type": "Day",
-            "Status": "Confirmed",
-            "Summary": "President's Week",
-            "Description": "",
-            "Location": "",
-            "Start": {
-              "Date": "20250217",
-              "Datetime": "20250217T000000",
-              "Timezone": "America/Los_Angeles"
+            "etag": "m799xug4",
+            "id": "42AEC16F-AE51-416D-A3B1-7F79B15865AE",
+            "type": "Day",
+            "status": "Confirmed",
+            "summary": "President's Week",
+            "description": "",
+            "location": "",
+            "start": {
+              "date": "20250218T000000",
+              "datetime": "20250218T000000",
+              "timezone": "America/Los_Angeles"
             },
-            "End": {
-              "Date": "20250218",
-              "Datetime": "20250218T000000",
-              "Timezone": "America/Los_Angeles"
+            "end": {
+              "date": "20250218T000000",
+              "datetime": "20250218T000000",
+              "timezone": "America/Los_Angeles"
             }
           }
         ]
