@@ -1,3 +1,120 @@
-<div class="layout">
-    <span class="title">Hello, full world!</span>
+
+<div class="layout layout--col layout--top">
+<!--
+    <div class="grid grid--cols-1 gap--medium">
+        <div class="grid grid--cols-3">
+            <div class="col--span-2">
+            <span class="value value--small text--black">WEDNESDAY <span class="text--gray-3">02/12/25</span></span>
+            </div>
+            <div class="col--span-1 row--end">
+                <span class="value value--small value--tnums text--gray-3">55°/51°</span>
+                <span class="value value--small">⛅</span>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid--cols-1 gap--medium">
+        <div class="grid grid--cols-1">
+            <div class="item">
+                <span class="label label--inverted clamp--1">All Day event ipsum delor</span>
+                <span class="label label--inverted clamp--1">Another Day event</span>
+                <span class="label label--inverted clamp--1">President's Day</span>
+            </div>
+        </div>
+        <div class="grid grid--cols-2">
+            <div class="item">
+                <div class="meta">1</div>
+                <div class="content">
+                    <span class="value value--xxsmall text--gray-4">11:00 - 12:30</span>
+                    <span class="title title--small clamp--1">ADVNC 2029 Tryout Lorem impum delor sit amet verboten verbose super long content</span>
+                    <span class="description clamp--1">Verboten verbose super long content Verboten verbose super long content Verboten verbose super long content Verboten verbose super long content</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="meta">2</div>
+                <div class="content">
+                    <span class="value value--xxsmall text--gray-4">11:00 - 12:30</span>
+                    <span class="title title--small clamp--1">ADVNC 2029 Tryout Lorem impum delor sit amet</span>
+                    <span class="description clamp--1">verbose super long content Veotenng content</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="meta">3</div>
+                <div class="content">
+                    <span class="value value--xxsmall text--gray-4">11:00 - 12:30</span>
+                    <span class="title title--small clamp--1">ADVNC 2029 Tryout Lorem impum delor sit amet verboten verbose super long content</span>
+                    <span class="description clamp--1">Verboten verbose super long content Verboten verbose super long content Verboten verbose super long content Verboten verbose super long content</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid--cols-1 gap--medium">
+        <div class="grid grid--cols-3">
+            <div class="col--span-2">
+            <span class="value value--small text--black">THURSDAY <span class="text--gray-3">02/13/25</span></span>
+            </div>
+            <div class="col--span-1 row--end">
+                <span class="value value--small value--tnums text--gray-3">65°/61°</span>
+                <span class="value value--small">🌦️</span>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid--cols-1 gap--medium">
+        <div class="grid grid--cols-1">
+            <div class="item">
+                <span class="label label--inverted clamp--1">All Day event ipsum delor</span>
+                <span class="label label--inverted clamp--1">Another Day event</span>
+
+            </div>
+        </div>
+        <div class="grid grid--cols-2">
+            <div class="item">
+                <div class="meta">1</div>
+                <div class="content">
+                    <span class="value value--xxsmall text--gray-4">11:00 - 12:30</span>
+                    <span class="title title--small clamp--1">ADVNC 2029 Tryout Lorem impum delor sit amet verboten verbose super long content</span>
+                    <span class="description clamp--1">Verboten verbose super long content Verboten verbose super long content Verboten verbose super long content Verboten verbose super long content</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="meta">2</div>
+                <div class="content">
+                    <span class="value value--xxsmall text--gray-4">11:00 - 12:30</span>
+                    <span class="title title--small clamp--1">ADVNC 2029 Tryout Lorem impum delor sit amet</span>
+                    <span class="description clamp--1">verbose super long content Veotenng content</span>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    {% for day in days %}
+    <div class="grid grid--cols-1 gap--medium">
+        <div class="grid grid--cols-3">
+            <div class="col--span-2">
+            <span class="value value--small text--black">{{ day.dow | upcase }} <span class="text--gray-3">{{ "20250217T000000" | date: "%Y-%m-%d %H:%M:%S" }}</span></span>
+            </div>
+            <div class="col--span-1 row--end">
+                <span class="value value--small value--tnums text--gray-3">55°/51°</span>
+                <span class="value value--small">⛅</span>
+            </div>
+        </div>
+    </div>
+    {% for event in day.events %}
+    <div>
+        <h2>{{ event.Summary }}</h2>
+        <p>{{ event.Description }}</p>
+        <p><strong>Location:</strong> {{ event.Location }}</p>
+        <p><strong>Start:</strong> {{ event.Start.Date }} {{ event.Start.Datetime }} ({{ event.Start.Timezone }})</p>
+        <p><strong>End:</strong> {{ event.End.Date }} {{ event.End.Datetime }} ({{ event.End.Timezone }})</p>
+        <p><strong>Status:</strong> {{ event.Status }}</p>
+    </div>
+    {% endfor %}
+    {% endfor %}
+
 </div>
+<div class="title_bar">
+  <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg" />
+  <span class="title">Family Calendar</span>
+  <span class="instance">iCloud</span>
+</div>
+
